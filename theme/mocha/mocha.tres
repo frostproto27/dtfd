@@ -1,0 +1,56 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://cwuwyk74ur7pn"]
+
+[ext_resource type="StyleBox" uid="uid://bljurypsqi43u" path="res://theme/mocha/embedded_bg.tres" id="1_bttku"]
+[ext_resource type="StyleBox" uid="uid://dk7ymg4h0o71u" path="res://theme/mocha/embedded_bg_hover.tres" id="2_hrux8"]
+[ext_resource type="StyleBox" uid="uid://cufpg4c6kd8j" path="res://theme/mocha/embedded_bg_pressed.tres" id="3_oap1s"]
+[ext_resource type="StyleBox" uid="uid://gjystcipkxmb" path="res://theme/mocha/embedded_solid_bg.tres" id="4_ydfuc"]
+[ext_resource type="StyleBox" uid="uid://3u54o8cuttyo" path="res://theme/mocha/embedded_highlight.tres" id="5_58byb"]
+[ext_resource type="StyleBox" uid="uid://cji2ca1k5f66r" path="res://theme/mocha/embedded_highlight_2.tres" id="6_3rmqs"]
+[ext_resource type="StyleBox" uid="uid://vonenwcvkukh" path="res://theme/mocha/embedded_highlight_3.tres" id="7_ys5xa"]
+[ext_resource type="FontFile" uid="uid://cntqwy42j1exi" path="res://theme/mocha/InterVariable.ttf" id="8_o3afs"]
+
+[resource]
+default_font = ExtResource("8_o3afs")
+Button/colors/font_color = Color(0.729412, 0.760784, 0.870588, 1)
+Button/colors/font_disabled_color = Color(0.729412, 0.760784, 0.870588, 0.231373)
+Button/colors/font_focus_color = Color(0.803922, 0.839216, 0.956863, 1)
+Button/colors/font_hover_color = Color(0.803922, 0.839216, 0.956863, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0.729412, 0.760784, 0.870588, 1)
+Button/colors/icon_hover_pressed_color = Color(0.729412, 0.760784, 0.870588, 1)
+Button/styles/disabled = ExtResource("1_bttku")
+Button/styles/focus = ExtResource("2_hrux8")
+Button/styles/hover = ExtResource("2_hrux8")
+Button/styles/normal = ExtResource("1_bttku")
+Button/styles/pressed = ExtResource("3_oap1s")
+CheckButton/colors/font_color = Color(0.729412, 0.760784, 0.870588, 1)
+CheckButton/colors/font_hover_pressed_color = Color(0.729412, 0.760784, 0.870588, 1)
+CheckButton/colors/font_pressed_color = Color(0.729412, 0.760784, 0.870588, 1)
+CheckButton/styles/pressed = ExtResource("1_bttku")
+Label/colors/font_color = Color(0.65098, 0.678431, 0.784314, 1)
+LineEdit/colors/clear_button_color = Color(0.65098, 0.678431, 0.784314, 1)
+LineEdit/colors/clear_button_color_pressed = Color(0.803922, 0.839216, 0.956863, 1)
+LineEdit/colors/font_color = Color(0.65098, 0.678431, 0.784314, 1)
+LineEdit/colors/font_uneditable_color = Color(0.65098, 0.678431, 0.784314, 0.501961)
+LineEdit/styles/normal = ExtResource("4_ydfuc")
+LineEdit/styles/read_only = ExtResource("4_ydfuc")
+ProgressBar/colors/font_color = Color(0.803922, 0.839216, 0.956863, 1)
+ProgressBar/styles/background = ExtResource("1_bttku")
+ProgressBar/styles/fill = ExtResource("3_oap1s")
+TabBar/colors/font_hovered_color = Color(0.729412, 0.760784, 0.870588, 1)
+TabBar/colors/font_selected_color = Color(0.803922, 0.839216, 0.956863, 1)
+TabBar/colors/font_unselected_color = Color(0.65098, 0.678431, 0.784314, 1)
+TabBar/styles/tab_disabled = ExtResource("1_bttku")
+TabBar/styles/tab_hovered = ExtResource("2_hrux8")
+TextEdit/colors/font_color = Color(0.65098, 0.678431, 0.784314, 1)
+TextEdit/styles/normal = ExtResource("4_ydfuc")
+Tree/colors/font_color = Color(0.65098, 0.678431, 0.784314, 1)
+Tree/colors/font_selected_color = Color(0.803922, 0.839216, 0.956863, 1)
+Tree/styles/panel = ExtResource("4_ydfuc")
+Tree/styles/selected = ExtResource("2_hrux8")
+Tree/styles/selected_focus = ExtResource("3_oap1s")
+VScrollBar/styles/grabber = ExtResource("5_58byb")
+VScrollBar/styles/grabber_highlight = ExtResource("6_3rmqs")
+VScrollBar/styles/grabber_pressed = ExtResource("7_ys5xa")
+VScrollBar/styles/scroll = ExtResource("4_ydfuc")
+VScrollBar/styles/scroll_focus = ExtResource("4_ydfuc")
