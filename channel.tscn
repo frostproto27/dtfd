@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cr141qft3xh5s"]
+[gd_scene load_steps=3 format=3 uid="uid://cr141qft3xh5s"]
 
 [ext_resource type="Theme" uid="uid://cwuwyk74ur7pn" path="res://theme/mocha/mocha.tres" id="1_e2wjr"]
+[ext_resource type="Script" path="res://autoview.gd" id="2_7s6dm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="."]
+[node name="bg" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,3 +19,66 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_e2wjr")
+theme_type_variation = &"BackgroundPanel"
+
+[node name="channels" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 256.0
+grow_vertical = 2
+theme = ExtResource("1_e2wjr")
+theme_type_variation = &"SecondaryPanel"
+
+[node name="members" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("1_e2wjr")
+theme_type_variation = &"SecondaryPanel"
+
+[node name="servers" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 64.0
+grow_vertical = 2
+theme = ExtResource("1_e2wjr")
+theme_type_variation = &"TertiaryPanel"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -384.0
+offset_right = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_7s6dm")
+
+[node name="TextEdit" type="TextEdit" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -368.0
+offset_top = -48.0
+offset_right = 368.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_e2wjr")
+placeholder_text = "Message placeholder"
+script = ExtResource("2_7s6dm")
+leftside_offset = 16
+rightside_offset = 16
+mainside_offset = 512
