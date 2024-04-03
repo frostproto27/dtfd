@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cr141qft3xh5s"]
 
 [ext_resource type="Theme" uid="uid://cwuwyk74ur7pn" path="res://theme/mocha/mocha.tres" id="1_e2wjr"]
-[ext_resource type="Script" path="res://messagebar.gd" id="3_42jwn"]
+[ext_resource type="Script" path="res://autoview.gd" id="2_7s6dm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -53,26 +53,32 @@ theme_type_variation = &"TertiaryPanel"
 
 [node name="centralpanel" type="Control" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 256.0
-offset_right = -256.0
+offset_left = -384.0
+offset_right = 384.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_7s6dm")
 
 [node name="messagebar" type="TextEdit" parent="centralpanel"]
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 16.0
+offset_left = -368.0
 offset_top = -48.0
-offset_right = -16.0
+offset_right = 368.0
 offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("1_e2wjr")
 placeholder_text = "Message placeholder"
-script = ExtResource("3_42jwn")
+script = ExtResource("2_7s6dm")
+leftside_offset = 16
+rightside_offset = 16
+mainside_offset = 512
